@@ -9,7 +9,7 @@
 title: Web Development and Programming | Álvaro González Álvarez
 email: alvaro@alvarogonzalezalvarez.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm Álvaro González Álvarez and this is my web development blog. Let's talk about Programming, Development, Java, JavaScript and WebSphere Commerce.
+  I'm Álvaro González Álvarez and this is my Web Development Blog. Let's talk about Programming, Development, Java, JavaScript and WebSphere Commerce.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://alvarogonzalezalvarez.com" # the base hostname & protocol for your site
 twitter_username: alvaro_gzz
