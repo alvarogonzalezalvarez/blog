@@ -1,8 +1,12 @@
 /* 320px (iPhone) */
 @media screen and (max-width:320px) {
+	.swag h1 {font-size: 20px;}
+	.swag h1 span {font-size: 13px;}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
+	.swag h1 {font-size: 20px;}
+	.swag h1 span {font-size: 13px;}
 	.wrapper { background: #f3f5f8; height: 640px; }
 	.iphone { display: none; }
 	.fluid-white { display: none; }
@@ -12,6 +16,10 @@
 	/* social links */
    footer .social-links { font-size: 20px; }
    footer .social-links li { margin-left: 14px; }
+}
+@media screen and (min-width:480px) and (max-width:660px){
+	.swag h1 {font-size: 25px;}
+	.swag h1 span {font-size: 15px;}
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
