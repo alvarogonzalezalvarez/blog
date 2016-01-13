@@ -239,7 +239,7 @@ iPhone Section
 /* ==========================================================================
 Swag
 ========================================================================== */
-.swag { background: url('https://alvarogonzalezalvarez.com/images/header-background.png') no-repeat center center; padding: 50px 0; background-position:center -400px;background-size: cover !important;-webkit-background-size: cover !important;}
+.swag { background: url('../img/header-blog.png') no-repeat center bottom; padding: 50px 0; background-size: cover !important;-webkit-background-size: cover !important;}
 .swag h1 { color: #2B2B2B; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #2B2B2B; display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
@@ -276,7 +276,7 @@ Subscribe
 /* ==========================================================================
 CTA
 ========================================================================== */
-.ignite-cta { background: url('https://alvarogonzalezalvarez.com/images/header-background.png') no-repeat center center; padding: 70px 0; background-position:center -870px;background-size: cover !important; -webkit-background-size: cover !important;}
+.ignite-cta { background: url('../img/footer-blog.png') no-repeat center bottom; padding: 70px 0; background-size: cover !important; -webkit-background-size: cover !important;}
 .ignite-btn { display: inline-block; padding: 25px 40px; color: #fff; border: solid 1px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
 .ignite-btn:hover, .ignite-btn:focus { color: #fff; border: solid 1px #0F9095; background-color: #0F9095;}
 /* ==========================================================================
