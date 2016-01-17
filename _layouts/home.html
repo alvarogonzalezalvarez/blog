@@ -1,52 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Development and Programming | Álvaro González Álvarez</title>
-    <meta name="description" content="I'm Álvaro González Álvarez and this is my Web Development Blog. Let's talk about Programming, Web Technologies, Java, JavaScript and WebSphere Commerce">
-    <meta name="author" content="Álvaro González Álvarez">
-    <link rel="canonical" href="https://alvarogonzalezalvarez.com/blog/">
-    <link rel="alternate" type="application/rss+xml" title="Web Development and Programming | Álvaro González Álvarez" href="https://alvarogonzalezalvarez.com/blog/feed.xml">
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet" >
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://alvarogonzalezalvarez.com/favicon.png" >
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-      </head>
+      {% include head.html %}
       <body id="top">
-        <header id="home">
-          <nav id="nav-wrap" class="opaque">
-           <div class="nav">
-              <a href="https://alvarogonzalezalvarez.com/">Álvaro González</a>
-           </div>
-           <div class="nav">
-              <a href="#home">Home</a>
-              <a href="#home">WCS</a>
-              <a href="#home">Java</a>
-              <a href="#home">JS</a>
-           </div>
-          </nav>
-          <section id="hero" style="display:none;">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </header>
+        {% include header.html %}
         <section class="swag text-center">
           <div class="container">
             <div class="row">
@@ -60,38 +16,6 @@
         <section class="portfolio text-center section-padding" id="portfolio">
           {{ content }}
         </section>
-        <div class="ignite-cta text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <a href="https://alvarogonzalezalvarez.com/" class="ignite-btn">About Me</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer id="footer">
-             <div class="twelve columns">
-                <ul class="social-links">
-                   <li><a href="https://google.com/+alvarogonzalezalvarez/about" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                   <li><a href="https://www.linkedin.com/in/alvarogonzalezalvarez" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                   <li><a href="https://github.com/alvarogonzalezalvarez" target="_blank"><i class="fa fa-github"></i></a></li>
-                   <li><a href="https://twitter.com/alvaro_gzz" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-                <ul class="copyright">
-                   <li>&copy; Copyright 2016</li>
-                   <li>Álvaro González Álvarez</li>
-                   <li>e-mail: alvaro@alvarogonzalezalvarez.com</li>   
-                </ul>
-             </div>
-             <div id="go-top"><a class="up-arrow-btn" title="Back to Top" href="#home"><i class="fa fa-chevron-up"></i></a></div>
-       </footer>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://alvarogonzalezalvarez.com/js/jquery.flexslider.js"></script>
-        <script src="https://alvarogonzalezalvarez.com/js/modernizr.js"></script>
+        {% include footer.html %}
       </body>
     </html>

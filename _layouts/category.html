@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+      {% include head.html %}
+      <body id="top">
+        {% include header.html %}
+        <section class="swag text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h1>Web Technologies, Development and Programming
+                <span>WebSphere Commerce, Java, JavaScript...</span></h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio text-center section-padding" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">{{ page.category }}</h1><br>
+              </div>
+            </div>
+            <div class="row">
+              <div id="portfolioSlider">
+                <ul class="slides">
+                    {% assign loopindex = 0 %}
+                    {% for post in site.categories[page.category] %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% if loopindex == 1 %}
+                    <li>
+                    <div class="col-md-4 wp4">
+                    {% endif %}
+                    {% if loopindex == 2 %}
+                    <div class="col-md-4 wp4 delay-05s">
+                    {% endif %}
+                    {% if loopindex == 3 %}
+                    <div class="col-md-4 wp4 delay-1s">
+                    {% assign loopindex = 0 %}
+                    {% endif %}
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="{{ post.imageprev | prepend: site.baseurl }}" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+                      <h2>{{ post.title }}</h2>
+                      <p>{{ post.description }}</p>
+                    </div>
+                    {% if loopindex == 0 %}
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        {% include footer.html %}
+      </body>
+    </html>

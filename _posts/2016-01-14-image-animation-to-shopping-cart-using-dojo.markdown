@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-01-10 21:27:05 +0100
-categories: jekyll update
+title:  "Image Animation to Shopping Cart using Dojo"
+description: "How to implement a cool image effect using JavaScript (Dojo) when the user adds an article or product to the shop cart"
+date:   2016-01-14 20:15:43 +0100
+categories: ['JavaScript']
+imageprev: /img/portfolio-03.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

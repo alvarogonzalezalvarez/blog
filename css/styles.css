@@ -439,7 +439,7 @@ div.nav a {
 /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
    display: inline-block;
-   padding: 8px 13px;
+   padding: 8px 12px;
    line-height: 32px;
 	text-decoration: none;
    text-align: left;

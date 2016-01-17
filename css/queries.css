@@ -1,12 +1,14 @@
 /* 320px (iPhone) */
-@media screen and (max-width:320px) {
+@media screen and (max-width:350px) {
 	.swag h1 {font-size: 25px;}
 	.swag h1 span {font-size: 13px;}
+	#authorlink {width: 40%;}
+	#catlinks {width: 58%;}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
 	#nav-wrap {font: 8px 'opensans-bold', sans-serif;}
-	div.nav a {padding: 8px 9px;}
+	div.nav a {padding: 8px 2px;}
 	.swag h1 {font-size: 33px;}
 	.swag h1 span {font-size: 13px;}
 	.wrapper { background: #f3f5f8; height: 640px; }
@@ -21,7 +23,7 @@
 }
 @media screen and (min-width:480px) and (max-width:660px){
 	#nav-wrap {font: 10px 'opensans-bold', sans-serif;}
-	div.nav a {padding: 8px 11px;}
+	div.nav a {padding: 8px 5px;}
 	.swag h1 {font-size: 41px;}
 	.swag h1 span {font-size: 15px;}
 }
