@@ -1,11 +1,13 @@
 /* 320px (iPhone) */
 @media screen and (max-width:320px) {
-	.swag h1 {font-size: 20px;}
+	.swag h1 {font-size: 25px;}
 	.swag h1 span {font-size: 13px;}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
-	.swag h1 {font-size: 20px;}
+	#nav-wrap {font: 8px 'opensans-bold', sans-serif;}
+	div.nav a {padding: 8px 9px;}
+	.swag h1 {font-size: 33px;}
 	.swag h1 span {font-size: 13px;}
 	.wrapper { background: #f3f5f8; height: 640px; }
 	.iphone { display: none; }
@@ -18,7 +20,9 @@
    footer .social-links li { margin-left: 14px; }
 }
 @media screen and (min-width:480px) and (max-width:660px){
-	.swag h1 {font-size: 25px;}
+	#nav-wrap {font: 10px 'opensans-bold', sans-serif;}
+	div.nav a {padding: 8px 11px;}
+	.swag h1 {font-size: 41px;}
 	.swag h1 span {font-size: 15px;}
 }
 /* xGA iPad */
@@ -41,7 +45,7 @@
 	.credit { text-align: center; }
 }
 @media only screen and (max-width: 767px) {
-	/* copyright */
+   /* copyright */
    footer .copyright li:before { content: none; }
    footer .copyright li { margin-right: 12px; }
 

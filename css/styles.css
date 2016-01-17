@@ -176,7 +176,7 @@ a:hover, a:focus { color: #0F9095; text-decoration: none; }
 p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
 h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
 h2::after { content: " "; border: solid 2px #0F9095; display: block; width: 35px; margin: 25px auto; }
-.section-padding { padding: 90px 0 100px }
+.section-padding { padding: 50px 0 100px }
 .dark-bg { background: #f3f5f8; }
 .light-bg { background-color: #fff; }
 .dark-box { background: #f3f5f8; -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4; -moz-box-shadow: 0px 3px 0px 0px #f0f2f4; box-shadow: 0px 3px 0px 0px #f0f2f4; }
@@ -239,8 +239,8 @@ iPhone Section
 /* ==========================================================================
 Swag
 ========================================================================== */
-.swag { background: url('../img/header-blog.png') no-repeat center bottom; padding: 50px 0; background-size: cover !important;-webkit-background-size: cover !important;}
-.swag h1 { color: #2B2B2B; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag { background: url('../img/header-blog.png') no-repeat center bottom; padding-top: 50px; padding-bottom: 10px; background-size: cover !important;-webkit-background-size: cover !important;}
+.swag h1 { color: #2B2B2B; font-size: 49px; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #2B2B2B; display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
 .down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: #0F9095; }
@@ -394,3 +394,65 @@ Waypoints
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
 .wp3 { background: url('../img/iphone-bg.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap div, #nav-wrap li {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+.opaque { background-color: #2B2B2B; }
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+div.nav {
+   min-height: 48px;
+   width: 49%;
+
+   /* center align the menu */
+   text-align: center;
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+div.nav a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #FFF;
+   font-weight: bold;
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+div.nav a:active { background-color: transparent !important; }
+div.nav a:hover { background-color: #0F9095; }
+div.nav li.current a { color: #F06000; }
