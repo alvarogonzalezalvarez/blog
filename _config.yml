@@ -17,4 +17,4 @@ github_username:  alvarogonzalezalvarez
 
 # Build settings
 markdown: kramdown
-permalink: /:seo/:title/
+permalink: /:title/

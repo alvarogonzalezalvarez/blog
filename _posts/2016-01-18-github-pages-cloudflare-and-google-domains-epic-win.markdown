@@ -5,7 +5,6 @@ description: "Combine Github Pages, Cloudflare and Google Domains in a perfect w
 date:   2016-01-18 21:27:05 +0100
 author: Álvaro González Álvarez
 categories: ['Web Technologies']
-seo: web-technologies
 imageprev: /img/github-pages-cloudflare-google-domains.png
 comments: true
 published: true
