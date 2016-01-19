@@ -49,7 +49,7 @@ Now we are going to add the entries that we copied before from our __Google Doma
 
 ![Email Forwarding for Google Domains in Cloudflare](https://alvarogonzalezalvarez.com/blog/img/email-forwarding-google-domains-cloudflare.png)
 
-Note that this DNS settings could take several hours to propagate.
+Note that these last DNS settings could take several hours to propagate.
 
 ####__3.3 - Forcing SSL__####
 
