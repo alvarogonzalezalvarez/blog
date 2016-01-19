@@ -28,15 +28,15 @@ layout: home
           {% endif %}
             <div class="overlay-effect effects clearfix">
               <div class="img">
-                <img src="{{ post.imageprev | prepend: site.baseurl }}" alt="Portfolio Item">
+                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="expand"><img src="{{ post.imageprev | prepend: site.baseurl }}" alt="{{ post.title }}"></a>
                 <div class="overlay">
-                  <a href="{{ post.url | prepend: site.baseurl }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
+                  <i class="fa fa-search"></i><br>Read More
                   <a class="close-overlay hidden">x</a>
                 </div>
               </div>
             </div>
             <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-            <h2>{{ post.title }}</h2>
+            <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
             <p>{{ post.description }}</p>
           </div>
           {% if loopindex == 0 %}
