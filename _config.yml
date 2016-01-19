@@ -8,8 +8,6 @@
 # Site settings
 title: Web Development and Programming | Álvaro González Álvarez
 email: alvaro@alvarogonzalezalvarez.com
-description: > # this means to ignore newlines until "baseurl:"
-  I'm Álvaro González Álvarez and this is my Web Development Blog. Let's talk about Programming, Web Technologies, Java, JavaScript and WebSphere Commerce
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://alvarogonzalezalvarez.com" # the base hostname & protocol for your site
 twitter_username: alvaro_gzz
@@ -18,3 +16,5 @@ github_username:  alvarogonzalezalvarez
 # Build settings
 markdown: kramdown
 permalink: /:title/
+description: > # this means to ignore newlines until "baseurl:"
+  I'm Álvaro González Álvarez and this is my Web Development Blog. Let's talk about Programming, Web Technologies, Java, JavaScript and WebSphere Commerce
