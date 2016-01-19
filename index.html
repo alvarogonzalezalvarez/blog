@@ -30,13 +30,13 @@ layout: home
               <div class="img">
                 <img src="{{ post.imageprev | prepend: site.baseurl }}" alt="Portfolio Item">
                 <div class="overlay">
-                  <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
+                  <a href="{{ post.url | prepend: post.seo | prepend: site.baseurl | prepend: site.url }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
                   <a class="close-overlay hidden">x</a>
                 </div>
               </div>
             </div>
             <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-            <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+            <h2><a href="{{ post.url | prepend: post.seo | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
             <p>{{ post.description }}</p>
           </div>
           {% if loopindex == 0 %}
