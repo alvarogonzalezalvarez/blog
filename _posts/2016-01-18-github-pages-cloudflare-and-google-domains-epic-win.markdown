@@ -2,11 +2,12 @@
 layout: post
 title:  "Github Pages, Cloudflare and Google Domains: Epic Win"
 description: "Combine Github Pages, Cloudflare and Google Domains in a perfect way: SSL, Caching, Naked Custom Domains and Email Forwarding for free!"
-date:   2016-01-10 21:27:05 +0100
+date:   2016-01-18 21:27:05 +0100
 author: Álvaro González Álvarez
 categories: ['Web Technologies']
 imageprev: /img/portfolio-01.jpg
 comments: true
+published: true
 ---
 As you probably already know, you can create your own website using a __Github Repository__. The only thing you need is a new repository named **_username_.github.io**, where _username_ is your username on Github. Once created, as soon as you push your html files to the repository, your site will be up and running; you can check it out typing in your browser `http://yourusername.github.io`. Easy, right?
 

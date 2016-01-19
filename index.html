@@ -13,6 +13,7 @@ layout: home
       <ul class="slides">
           {% assign loopindex = 0 %}
           {% for post in site.posts %}
+          {% if post.published %}
           {% assign loopindex = loopindex | plus: 1 %}
           {% if loopindex == 1 %}
           <li>
@@ -40,6 +41,7 @@ layout: home
           </div>
           {% if loopindex == 0 %}
           </li>
+          {% endif %}
           {% endif %}
           {% endfor %}
       </ul>
