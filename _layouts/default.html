@@ -6,13 +6,18 @@
   <body id="top">
 
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <section class="features text-center section-padding" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="features-wrapper">
+              {{ content }}
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
+    </section>
     {% include footer.html %}
 
   </body>

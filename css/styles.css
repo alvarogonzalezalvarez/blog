@@ -418,6 +418,8 @@ Waypoints
 }
 .opaque { background-color: #2B2B2B; }
 
+.jekyll-image {padding: 0 0 0 40px;}
+
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
 
