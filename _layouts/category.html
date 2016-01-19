@@ -26,6 +26,7 @@
                     {% assign loopindex = 0 %}
                     {% assign postfound = 0 %}
                     {% for post in site.categories[page.categorylower] %}
+                    {% if post.published %}
                     {% assign postfound = 1 %}
                     {% assign loopindex = loopindex | plus: 1 %}
                     {% if loopindex == 1 %}
@@ -43,21 +44,23 @@
                         <div class="img">
                           <img src="{{ post.imageprev | prepend: site.baseurl }}" alt="Portfolio Item">
                           <div class="overlay">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
+                            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
                       </div>
                       <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-                      <h2>{{ post.title }}</h2>
+                      <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
                       <p>{{ post.description }}</p>
                     </div>
                     {% if loopindex == 0 %}
                     </li>
                     {% endif %}
+                    {% endif %}
                     {% endfor %}
                     {% if postfound == 0 %}
                     {% for post in site.categories[page.category] %}
+                    {% if post.published %}
                     {% assign loopindex = loopindex | plus: 1 %}
                     {% if loopindex == 1 %}
                     <li>
@@ -74,17 +77,18 @@
                         <div class="img">
                           <img src="{{ post.imageprev | prepend: site.baseurl }}" alt="Portfolio Item">
                           <div class="overlay">
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
+                            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
                             <a class="close-overlay hidden">x</a>
                           </div>
                         </div>
                       </div>
                       <p>{{ post.date | date: "%b %-d, %Y" }}</p>
-                      <h2>{{ post.title }}</h2>
+                      <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
                       <p>{{ post.description }}</p>
                     </div>
                     {% if loopindex == 0 %}
                     </li>
+                    {% endif %}
                     {% endif %}
                     {% endfor %}
                     {% endif %}
