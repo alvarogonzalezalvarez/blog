@@ -28,9 +28,9 @@ layout: home
           {% endif %}
             <div class="overlay-effect effects clearfix">
               <div class="img">
-                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="expand"><img src="{{ post.imageprev | prepend: site.baseurl }}" alt="{{ post.title }}"></a>
+                <img src="{{ post.imageprev | prepend: site.baseurl }}" alt="Portfolio Item">
                 <div class="overlay">
-                  <i class="fa fa-search"></i><br>Read More
+                  <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="expand"><i class="fa fa-search"></i><br>Read More</a>
                   <a class="close-overlay hidden">x</a>
                 </div>
               </div>
