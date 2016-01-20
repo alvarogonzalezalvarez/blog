@@ -282,7 +282,7 @@ Subscribe
 CTA
 ========================================================================== */
 .ignite-cta { background: url('../img/footer-blog.png') no-repeat center bottom; padding: 70px 0; background-size: cover !important; -webkit-background-size: cover !important;}
-.ignite-btn { display: inline-block; padding: 25px 40px; color: #fff; border: solid 1px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
+.ignite-btn { display: inline-block; padding: 25px 30px; color: #fff; border: solid 1px #fff; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
 .ignite-btn:hover, .ignite-btn:focus { color: #fff; border: solid 1px #0F9095; background-color: #0F9095;}
 /* ==========================================================================
 Team
