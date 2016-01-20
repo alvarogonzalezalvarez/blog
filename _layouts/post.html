@@ -10,15 +10,15 @@ layout: default
   </div>
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished dateModified">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-	    <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished dateModified">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+	    <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
 	    	<meta itemprop="url" content="{{ '/images/alvaro-gonzalez-alvarez-2.png' | prepend: site.url }}">
 	    	<meta itemprop="width" content="200">
 	    	<meta itemprop="height" content="200">
-	    </div>
+	    </span>
 	    <span itemprop="name">{{ page.author }}</span>
 	    <meta itemprop="url" content="{{ site.url }}">
-    </div>
+    </span>
 	<div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
 			<meta itemprop="url" content="{{ '/images/alvaro-gonzalez-alvarez-2.png' | prepend: site.url }}">
