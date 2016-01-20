@@ -9,12 +9,12 @@ imageprev: /img/github-pages-cloudflare-google-domains.png
 comments: true
 published: true
 ---
-As you probably already know, you can create your own website using a __Github Repository__. The only thing you need is a new repository named **_username_.github.io**, where _username_ is your username on Github. Once created, as soon as you push your html files to the repository, your site will be up and running; you can check it out typing in your browser `http://yourusername.github.io`. Easy, right?
+As you probably already know, you can create your own website using a __Github Repository__. The only thing you need is a new repository named **_username_.github.io**, where _username_ is your username on Github. Once created, as soon as you push your html files to the repository, your site will be up and running; you can check it out by typing in your browser `http://yourusername.github.io`. Easy, right?
 
 Now that we have our site online, there are two things you should know about __Github Pages__:
 
 1. It doesn't support `SSL`.
-2. If you want to configure an __apex__ or a __naked__ domain as a `Custom Domain`, you will loose the benefits of Github's CDN.
+2. If you want to configure an __apex__ or a __naked__ domain as a `Custom Domain`, you will lose the benefits of Github's CDN.
 
 But don't worry, we are going to solve these two points and gain even more features by combining __Github Pages__ with __Cloudflare__.
 
@@ -23,7 +23,7 @@ But don't worry, we are going to solve these two points and gain even more featu
 Firstly, you need to have a domain name purchased. In this guide we will be using __Google Domains__, as it's incredibly easy to combine with __Cloudflare__ and __Github Pages__. Let's begin: 
 
 1. Create a [Cloudflare's free acount][cloudflare-free].
-2. When asked, enter your site URL. Cloudflare will assign to you two DNS name servers that you have to configure in your Google Domains account.
+2. When asked, enter your site URL. Cloudflare will assign to you two DNS name servers that you will have to configure in your Google Domains account.
 
 #__2 - Google Domains: DNS Setup__#
 
