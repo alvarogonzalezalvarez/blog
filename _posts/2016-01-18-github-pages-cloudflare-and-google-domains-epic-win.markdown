@@ -2,7 +2,7 @@
 layout: post
 title:  "Github Pages, Cloudflare and Google Domains: Epic Win"
 description: "Combine Github Pages, Cloudflare and Google Domains in a perfect way: SSL, Caching, Naked Custom Domains and Email Forwarding for free!"
-date:   2016-01-18 21:27:05 +0100
+date:   2016-01-21 19:13:05 +0100
 author: Álvaro González Álvarez
 categories: ['Web Technologies']
 imageprev: /img/github-pages-cloudflare-google-domains.png
@@ -39,13 +39,13 @@ Log into your __Google Domains__ account and follow the steps below:
 
 ####__3.1 - Configuring a Naked Domain__####
 
-Log into your __Cloudflare__ account and go to `DNS`. We will add two `DNS Records` in order to configure a __Naked Domain__ (http://example.com) for our __Github Page__ as follows:
+Log into your __Cloudflare__ account and go to `DNS`. We will add two `DNS Records` in order to configure a __Naked Domain__ (http://example.com) for our __Github Page__ as follows (replace 'alvarogonzalezalvarez.com' with 'yourdomainname.com' and 'alvarogonzalezalvarez.github.io' with '_yourgithubusername_.github.io'):
 
 ![Naked Domain on Cloudflare for Github Pages](https://alvarogonzalezalvarez.com/blog/img/naked-domain-cloudflare-github-pages.png)
 
 ####__3.2 - Configuring Email Forwarding__####
 
-Now we are going to add the entries that we copied before from our __Google Domains__ account:
+Now we are going to add the entries that we copied before from our __Google Domains__ account (again, don't forget to replace 'alvarogonzalezalvarez.com' with 'yourdomainname.com'):
 
 ![Email Forwarding for Google Domains in Cloudflare](https://alvarogonzalezalvarez.com/blog/img/email-forwarding-google-domains-cloudflare.png)
 
@@ -53,7 +53,7 @@ Note that these last DNS settings could take several hours to propagate.
 
 ####__3.3 - Forcing SSL__####
 
-As we stated before, __Github Pages__ doesn't support https, but don't panic; on __Cloudflare__, go to `Page Rules` and create a rule as follows:
+As we stated before, __Github Pages__ doesn't support https, but don't panic; on __Cloudflare__, go to `Page Rules` and create a rule as follows (yes, I know you've already got it, but just in case, don't forget to replace alvarogonzalezalvarez.com with yourdomainname.com :D):
 
 ![SSL and https for Github Pages using Cloudflare](https://alvarogonzalezalvarez.com/blog/img/ssl-https-github-pages-cloudflare.png)
 
