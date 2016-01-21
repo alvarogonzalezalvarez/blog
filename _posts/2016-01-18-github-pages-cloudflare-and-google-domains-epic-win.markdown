@@ -53,7 +53,7 @@ Note that these last DNS settings could take several hours to propagate.
 
 ####__3.3 - Forcing SSL__####
 
-As we stated before, __Github Pages__ doesn't support https, but don't panic; on __Cloudflare__, go to `Page Rules` and create a rule as follows (yes, I know you've already got it, but just in case, don't forget to replace alvarogonzalezalvarez.com with yourdomainname.com :D):
+As we stated before, __Github Pages__ doesn't support https, but don't panic; on __Cloudflare__, go to `Page Rules` and create a rule as follows (yes, I know you've already got it, but just in case, don't forget to replace 'alvarogonzalezalvarez.com' with 'yourdomainname.com' :D):
 
 ![SSL and https for Github Pages using Cloudflare](https://alvarogonzalezalvarez.com/blog/img/ssl-https-github-pages-cloudflare.png)
 
@@ -72,10 +72,10 @@ Feel free to explore and find out other useful settings.
 And finally, the last step. Go to your Github repository: **_username_.github.io**, create a file named `CNAME` and add a single line that specifies your naked custom domain (example.com). For example:
 
 {% highlight ruby %}
-example.com
+yourdomainname.com
 {% endhighlight %}
 
-Now, fire up your browser and test `https://yoursite.com`!
+Now, fire up your browser and test `https://yourdomainname.com`!
 
 #__CONCLUSION__#
 
