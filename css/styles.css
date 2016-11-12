@@ -460,5 +460,5 @@ div.nav a {
 }
 
 div.nav a:active { background-color: transparent !important; }
-div.nav a:hover { background-color: #0F9095; }
+div.nav a:hover { border-bottom: 3px solid #11ABB0; }
 div.nav li.current a { color: #F06000; }
