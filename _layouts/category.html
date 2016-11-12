@@ -49,7 +49,7 @@
                         </div>
                       </div>
                       <p>{{ post.date | date: "%b %-d, %Y" }} • {{ post.author }}</p>
-                      <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+                      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                       <p>{{ post.description }}</p>
                     </div>
                     {% if loopindex == 0 %}
@@ -81,7 +81,7 @@
                         </div>
                       </div>
                       <p>{{ post.date | date: "%b %-d, %Y" }} • {{ post.author }}</p>
-                      <h2><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+                      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                       <p>{{ post.description }}</p>
                     </div>
                     {% if loopindex == 0 %}
